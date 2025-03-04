@@ -39,8 +39,8 @@ def process_pdf(file_path):
             [
                 uploaded_file,
                 """
-                1. Verify if the uploaded document belongs to April 2024.
-                2. Check whether the last line of the second paragraph contains the word "Profits".
+                1. Check if the document belongs to the current year. If not, state "Yes" or "No" and mention the document's year and month.
+                2. Verify if the "Opinion" section on the first page mentions "profit". If it does, confirm what it says about the profit.
                 3. Extract the NET PROFIT AFTER TAX amount from the Standalone Statement of Profit and Loss.
                 4. Confirm if the section "Annexure B" of the Independent Auditor’s Report contains 20 points, numbered in Roman numerals.
                 """,
@@ -50,7 +50,7 @@ def process_pdf(file_path):
     return None
 
 # Streamlit UI
-st.title("PDF Financial Document Verification")
+st.title("Financial Document Verification")
 
 uploaded_file = st.file_uploader("Upload your financial PDF", type=["pdf"])
 if uploaded_file is not None:
