@@ -43,7 +43,7 @@ def process_pdf(file_path):
                 2. Verify if the "Opinion" section on the first page mentions "profit". If it does, confirm what it says about the profit.
                 3. Extract the NET PROFIT AFTER TAX amount from the Standalone Statement of Profit and Loss (Note: Not mention like million).
                 4. Confirm if the section "Annexure B" of the Independent Auditor’s Report contains 20 points, numbered in Roman numerals.
-                5. In the Standalone Balance Sheet, check if the row containing 'Property, plant, and equipment' with column 'notes' as 3 has matching values with Note 3.
+                5. Check if the value of 'Property, plant, and equipment' in the Standalone Balance Sheet matches the 'Total Property, Plant, and Equipment' value in the 'PROPERTY, PLANT, AND EQUIPMENT AND INTANGIBLE ASSETS' table.
                 """,
             ]
         )
