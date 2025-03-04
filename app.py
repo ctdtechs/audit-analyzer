@@ -4,7 +4,7 @@ import streamlit as st
 import google.generativeai as genai
 
 # Configure Google Gemini API
-GEMINI_API_KEY = "AIzaSyAZlp08VvmiTCY9uVV8THEcm5CuExPxNG0"
+GEMINI_API_KEY = "AIzaSyCmWlJgNd6MZAVwe8a8-VC5wYbrk7sTJDg"
 if not GEMINI_API_KEY:
     st.error("GEMINI_API_KEY is not set in the environment variables.")
     st.stop()
