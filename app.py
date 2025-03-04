@@ -40,7 +40,7 @@ def process_pdf(file_path):
                 uploaded_file,
                 """
                 1. Check if the document belongs to the current year. If not, state "Yes" or "No" and mention the document's year and month.
-                2. Verify if the "Opinion" section on the first page mentions "profit". If it does, confirm what it says about the profit.
+                2. Verify if the "Opinion" section in the Independent Auditor’s Report mentions "profit." If it does, confirm what it states about the profit and get the Balance Sheet, including the specific year and month referenced.
                 3. Extract the NET PROFIT AFTER TAX amount from the Standalone Statement of Profit and Loss (Note: Not mention like million).
                 4. Confirm if the section "Annexure B" of the Independent Auditor’s Report contains 20 points, numbered in Roman numerals.
                 5. Check if the value of 'Property, plant, and equipment' in the Standalone Balance Sheet matches the 'Total Property, Plant, and Equipment' value in the 'PROPERTY, PLANT, AND EQUIPMENT AND INTANGIBLE ASSETS' table.
